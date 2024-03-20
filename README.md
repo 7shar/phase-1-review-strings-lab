@@ -78,10 +78,7 @@ Flatbook, '` and the value stored in `currentUser`. Maybe we can include both of
 them in a single string?
 
 ```js
-const currentUser = 'Grace Hopper';
-
-const welcomeMessage = 'Welcome to Flatbook, currentUser';
-```
+const currentUser = 'Grace Hopper';```
 
 If we rerun the tests, we're once again passing the second test, but we're back
 to failing the third test. The new error message for the third test gives us a
@@ -198,7 +195,7 @@ Let's rewrite our `welcomeMessage` to use a template literal:
 ```js
 const currentUser = 'Grace Hopper';
 
-const welcomeMessage = `Welcome to Flatbook, ${currentUser}`;
+const welcomeMessage = `Welcome to Flatbook,currentUser ${}`;
 ```
 
 The first three tests are still passing, but the fourth wants our
